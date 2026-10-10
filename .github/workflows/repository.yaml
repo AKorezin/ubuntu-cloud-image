@@ -8,7 +8,7 @@ concurrency:
 jobs:
   lint_actionlint:
     name: Lint with actionlint
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: read
       pull-requests: write
@@ -17,7 +17,7 @@ jobs:
       - uses: devops-actions/actionlint@ec02b36684b2f574f1d219ad0a43b082e46bf3e4 # v0.1.13
   lint_prettier:
     name: Lint with prettier
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: read
     steps:
@@ -29,7 +29,7 @@ jobs:
           prettier_options: --write .
   lint_renovate:
     name: Lint with renovate config validator
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: read
     steps:
@@ -41,7 +41,7 @@ jobs:
             renovate.json
   sast_poutine:
     name: Scan with poutine
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       security-events: write
       contents: read
