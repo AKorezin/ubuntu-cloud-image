@@ -14,7 +14,7 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: devops-actions/actionlint@33c4280e46dd7578b21b0fbbfd19fe8063f68291 # v1.0.1
+      - uses: devops-actions/actionlint@e1fc6682e5b50fbddb842abc762ea365e6fe3388 # v2.0.0
   lint_prettier:
     name: Lint with prettier
     runs-on: ubuntu-26.04
